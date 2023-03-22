@@ -12,11 +12,6 @@ const nextConfig = {
         port: '3000',
         pathname: '/**',
       },
-      {
-        protocol: 'https',
-        hostname: 'coronado-pet.vercel.app',
-        pathname: '/**',
-      },
     ],
   },
 }
