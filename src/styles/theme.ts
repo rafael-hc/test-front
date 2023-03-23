@@ -1,4 +1,4 @@
-import { createStitches, defaultThemeMap } from "@stitches/react";
+import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const { styled, globalCss, getCssText } = createStitches({
   media: {
@@ -7,12 +7,18 @@ export const { styled, globalCss, getCssText } = createStitches({
     lg: '(min-width: 1024px)',
   },
   theme: {
-    
     colors: {
-      white: "#FFFFFF",
-      black: "#000000",
-      "gray-100": "#878787",
-      "purple-100":"#9222DC"
+      white: '#FFFFFF',
+      black: '#000000',
+      'gray-100': '#F5F5F5',
+      'gray-200': '#CCCCCC',
+      'gray-300': '#9B9B9B',
+      'gray-400': '#878787',
+      purple: '#9222DC',
+      danger: '#DE1616',
+    },
+    shadows: {
+      header: `0px 2px 4px rgba(0,0,0,0.1)`,
     },
     fontSizes: {
       xs: '0.75rem',
@@ -21,6 +27,9 @@ export const { styled, globalCss, getCssText } = createStitches({
       lg: '1.125rem',
       xl: '1.25rem',
       '2xl': '1,375',
+    },
+    fonts: {
+      default: 'Arial, sans-serif',
     },
     space: {
       1: '0.25rem',
@@ -40,7 +49,7 @@ export const { styled, globalCss, getCssText } = createStitches({
       80: '20rem',
     },
     radii: {
-      xs: '4px',      
+      xs: '4px',
     },
     fontWeights: {
       regular: '400',
@@ -48,7 +57,7 @@ export const { styled, globalCss, getCssText } = createStitches({
     },
     lineHeights: {
       base: '16px',
-      "l-tall": '20px',
+      'l-tall': '20px',
       tall: '24px',
     },
   },

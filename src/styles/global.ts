@@ -6,21 +6,18 @@ export const globalStyles = globalCss({
     padding: 0,
     boxSizing: 'border-box',
   },
-  html: {
-    fontSize: 10,
-
-    '@sm': {
-      fontSize: 16,
-    },
-  },
-
   body: {
     '-webkit-font-smoothing': 'antialiased',
+    backgroundColor: '$gray-100',
   },
 
   'body, input, textarea, button': {
     fontFamily: 'Arial',
     fontWeight: '$regular',
+    '&:focus': {
+      outline: 0,
+      // boxShadow: '0 0 0 2px $purple-100'
+    },
   },
 
   button: {
@@ -33,7 +30,7 @@ export const globalStyles = globalCss({
   },
 
   a: {
-    color: '$gray-100',
+    color: '$black',
     textDecoration: 'none',
   },
 })
